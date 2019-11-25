@@ -1,0 +1,89 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+#content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.submitted.invalid-card{
+  background-color: red;
+  color:white;
+}
+.submitted.valid-card{
+  background-color: green;
+  color:white;
+}
+.not-submitted{
+  background-color: #eee;
+}
+
+.valid-text.submitted,
+.invalid-text.submitted{
+  font-family: Arial;
+  font-weight:700;
+}
+.valid-h2,
+.invalid-h2{
+  display:none;
+}
+.valid-text.submitted{
+  .valid-h2{
+    display:block;
+  }
+  .invalid-h2{
+    display:none;
+  }
+
+}
+
+.invalid-text.submitted{
+  .valid-h2{
+    display:none;
+  }
+  .invalid-h2{
+    display:block;
+  }
+}
+
+input#card-number{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 10px auto;
+    clear: both;
+    display: block;
+}
+
+footer{
+  padding:10px;
+  font-weight:700;
+  background-color:$primary;
+  a{
+    color:white;
+  }
+}
+
+
